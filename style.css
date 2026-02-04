@@ -243,6 +243,18 @@ p {
   margin: 1rem auto 2rem auto;
 }
 
+.small-image {
+  max-width: 70%;
+  display: block;
+  margin: 1rem auto 2rem auto;
+}
+
+.smaller-image {
+  max-width: 50%;
+  display: block;
+  margin: 1rem auto 2rem auto;
+}
+
 .z-depth-1 {
   /* Remove shadow from images as it's now on the container */
   box-shadow: none;
@@ -587,14 +599,24 @@ pre {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+
 .slideshow-container:hover {
     /* transform: translateY(-5px); */
     box-shadow: 0 20px 30px -5px rgba(0, 0, 0, 0.25), 0 15px 15px -5px rgba(0, 0, 0, 0.15);
 }
 
 .slideshow {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.slideshow.no-caption {
     position: relative;
-    height: 500px;
+    height: 400px;
     overflow: hidden;
     border-radius: 10px;
     display: flex;
